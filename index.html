@@ -7,26 +7,38 @@
     <title>OpticTech - Find Your Community</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
     <link href="https://fonts.googleapis.com/css?family=Cairo:700|PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
     
         <div class="row">
-            <header>
+            <header class="clearfix">
                 <h1>OpticTech</h1>
-                <nav>
-                    <ul class="mobile-toggle">
-                        <li><a href="">About Us</a></li>
-                        <li><a href="">Quick Tips</a></li>
-                        <li><a href="">Contact Us</a></li>
+
+                <a href="#main-menu" class="mobile-toggle" role="button" id="main-menu-toggle" aria-expanded="false" aria-controls="main-menu" aria-label="Open main menu">
+                    <span class="sr-only">Open main menu</span>
+                    <span class="fa fa-bars" aria-hidden="true"></span>
+                </a>
+
+                <nav class="main-menu" id="main-menu" role="navigation" aria-expanded="false" aria-label="Main menu">
+                    <a href="#main-menu-toggle" class="menu-close" role="button" id="main-menu-close" aria-expanded="false" aria-controls="main-menu" aria-label="Close main menu">
+                        <span class="sr-only">Close main menu</span>
+                        <span class="fa fa-times-circle-o" aria-hidden="true"></span>
+                    </a>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Quick Tips</a></li>
+                        <li><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
+                <a href="#main-menu-toggle" class="backdrop" tabindex="-1" aria-hidden="true" hidden></a>
             </header>
         </div>
 
         <div class="row">
             <main>
-                <h3 class="tagline">Do <span>Something</span> Great</h3>
+                <h3 class="tagline">Do Something <span>Great</span></h3>
                 <div class="hero">
                     <h2>Have a great idea?</h2>
                     <p>We want to help you turn your ideas into something real. Here at OpticTech our networking events and workshops discuss the many pitfalls and challenges a new business can run into. We're here to help you circumvent as many pitfalls as possible.</p>
